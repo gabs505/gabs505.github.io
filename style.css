@@ -1,0 +1,206 @@
+
+*
+{
+    margin-top:0;
+    padding:0;
+    
+}
+
+
+body
+{
+    
+    font-family: 'Roboto Mono', monospace;
+    color:#363636;
+    font-size:20px;
+    /* background-color: #fff2f2; */
+    
+    /* overflow: hidden; */
+    
+    
+}
+
+#wrapper
+{   
+    margin:10vh 0;
+}
+
+.background {
+  
+    position:absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    /* color:#ccc5c5 */
+}
+
+
+#main
+{
+    
+    margin-left:auto;
+    margin-right:auto;
+    /* padding-top:10vh;*/
+    /* height:90vh; */
+    z-index:100;
+
+}
+
+#profile-photo
+{
+    display:block;
+    text-align: center;
+}
+img{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.description
+{
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-size:30px;
+}
+
+#info-button
+{
+    /* width:100px; */
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+    font-size:15px;
+}
+
+
+
+
+#menu
+{
+    margin-top:2vh;
+    /* height:80vh; */
+}
+
+
+
+
+
+.menu-field
+{
+    font-size: 20px;
+    background-color:#f3f2f0;
+    border:0.5px solid #dad9d8;
+    text-align: center;
+    
+    
+    
+    
+    
+}
+
+.menu-field:hover
+{
+    background-color:#e2e1e0;
+}
+
+.side-description
+{
+
+
+    font-size: 20px;
+    text-align:center;
+    /* background-image: url("3551895.jpg"); */
+    background-color:#ffffff;
+    
+    /* color:#ececec; */
+    
+    
+}
+
+.page-active
+{
+    display:block;
+    
+}
+.page
+{
+    display:none;
+}
+
+#web-icons
+{
+    /* width:990px;
+    margin:5px; */
+    background-color:#ffffff;
+    /* color:#e94040; */
+}
+
+.icon
+{
+    width:50px;
+    height:70px;
+    float:left;
+}
+
+a
+{
+    text-decoration: none !important;
+    color:#363636;
+    
+}
+
+
+
+.icon-github-circled
+{
+    color:#333;
+}
+
+.icon-linkedin-squared
+{
+    color:#0077b5;
+}
+.icon-soundcloud-circled
+{
+    color:#ff8800;
+}
+
+@media only screen and (max-width: 991px)
+{
+    body
+    {
+        overflow:scroll;
+    }
+    button
+    {
+        display:none;
+        visibility: hidden;
+    }
+
+    .side-description
+    {
+        padding-top:15px;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    #main
+    {
+        height:90vh;
+    }
+
+    #menu
+    {
+        height:60vh;
+        margin-top:30vh;
+        
+    }
+
+    
+    
+}
