@@ -69,3 +69,7 @@ $(document).ready(function() {
   window.onhashchange = onHash;
   onHash();
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
