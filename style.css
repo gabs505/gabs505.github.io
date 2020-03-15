@@ -3,7 +3,7 @@
 {
     margin-top:0;
     padding:0;
-    overflow: hidden !important;
+    
     
 }
 
@@ -190,6 +190,10 @@ a
 
 @media only screen and (min-width: 992px)
 {
+    body
+    {
+        overflow: hidden !important;
+    }
     #main
     {
         height:90vh;
