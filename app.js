@@ -1,14 +1,9 @@
 // //zrobić przełączenie na dark theme po kliknięciu w ikonkę
 
-// var sideMenu=document.getElementsByClassName('side-menu')[0];
-// var links=sideMenu.getElementsByTagName('a');
-// for(var i=0;i<links.length;i++){
 
-// 	links[i].addEventListener('click',function(e){
-// 	e.preventDefault();
-	
-// });
-// }
+// $('#info-button').on('click',function(){
+//   smoothScroll();
+// })
 
 //smooth scrolling with jQuery
 $('#info-button a').on('click', function (e) {
@@ -73,3 +68,26 @@ $(document).ready(function() {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+//sticky navbar
+
+$(document).ready(function() {
+  // var NavY = $('#info-button').offset().top;
+  var NavY=400;
+
+    var stickyNav = function(){
+        var ScrollY = $(window).scrollTop();
+            
+        if (ScrollY > NavY) { 
+            $('.go-up-button').addClass('sticky');
+        } else {
+            $('.go-up-button').removeClass('sticky'); 
+        }
+    };
+    
+    stickyNav();
+    
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});

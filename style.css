@@ -16,10 +16,69 @@ body
     font-size:20px;
     /* background-color: #fff2f2; */
     
-    
-    
+}
+
+#navbar
+{
+    width:100%;
+    height:6vh;
+    background-color: #363636;
+    color:#ffffff;
+    z-index:200;
+    position:fixed;
+    left:0;
+    top:0;
     
 }
+
+
+
+.nav-icon
+{
+    font-size:20px;
+    padding:4px 10px;
+    float:left;
+
+}
+
+ul
+{
+    display:none;
+    position:fixed;
+    width:100px;
+    top:5vh;
+}
+
+#upper-menu:hover+ul, ul:hover
+{
+    display:block;
+}
+ul>li
+{
+    color:#f3efef;
+    background-color: #363636;
+    font-size:15px;
+    padding:5px 6px;
+    border-bottom:0.5px dashed #c4c4c4;;
+}
+
+ul>li:last-child
+{
+    border-bottom: none;
+}
+
+ul>li:hover
+{
+    background-color: #474747;
+    cursor: pointer;
+}
+
+ul>li>a, ul>li>a:hover
+{
+    color:#f3efef;
+}
+    
+
 
 #wrapper
 {   
@@ -132,13 +191,6 @@ img{
     display:none;
 }
 
-#web-icons
-{
-    /* width:990px;
-    margin:5px; */
-    background-color:#ffffff;
-    /* color:#e94040; */
-}
 
 .icon
 {
@@ -154,11 +206,22 @@ a
     
 }
 
+a:hover
+{
+    cursor:pointer;
+    text-decoration: none;
+    color:#363636;
+}
 
+.icon-th-list
+{
+    color:#f3efef;
+}
 
 .icon-github-circled
 {
-    color:#333;
+    /* color:#333; */
+    color:#ffffff;
 }
 
 .icon-linkedin-squared
@@ -168,6 +231,24 @@ a
 .icon-soundcloud-circled
 {
     color:#ff8800;
+}
+
+.go-up-button
+{
+    position:fixed;
+    right:50px;
+    bottom:40px;
+    display:none;
+    font-size:40px;
+    background-color:#e2e1e0;
+    border:1px solid #d1d0d0;
+    padding:5px 10px;
+}
+
+.sticky
+{
+    display:block;
+    
 }
 
 @media only screen and (max-width: 991px)
@@ -192,7 +273,7 @@ a
 {
     body
     {
-        overflow: hidden !important;
+        /* overflow: hidden !important; */
     }
     #main
     {
