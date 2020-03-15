@@ -3,6 +3,7 @@
 {
     margin-top:0;
     padding:0;
+    overflow: hidden !important;
     
 }
 
@@ -15,7 +16,7 @@ body
     font-size:20px;
     /* background-color: #fff2f2; */
     
-    overflow: hidden !important;
+    
     
     
 }
