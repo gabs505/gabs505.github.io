@@ -26,9 +26,9 @@
                 
             </div>
             <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about-me" class="scroll-link">About me</a></li>
+                <li><a href="#cv" class="scroll-link">CV</a></li>
+                <li><a href="#contact" class="scroll-link">Contact</a></li>
             </ul>
             <a href="https://github.com/gabs505" target="_blank"><div class="nav-icon"><i class="icon-github-circled"></i></div></a>
             <a href="https://www.linkedin.com/in/gabriela-wieliczko-7a7a9718a/" target="_blank"><div class="nav-icon"><i class="icon-linkedin-squared"></i></div></a>
@@ -47,7 +47,7 @@
                         <div class="description">Hi! </br> Welcome to my personal site.
                         </div>
                         
-                        <a href="#menu"><button id="info-button" type="button" class="btn btn-light btn-block" >About me</button></a>
+                        <a href="#menu" class="scroll-link"><button id="info-button" type="button" class="btn btn-light btn-block" >About me</button></a>
                         
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                     <div class="col-md-6 col-12 ">
                         <div class="row">
                             <div class="menu-field col-md-6 col-6" data-toggle="tooltip" data-placement="top" title="About me"><a class="field-link" href="#about-me"><i class="icon-user"></i></a></div>
-                            <div class="menu-field col-md-6 col-6" data-toggle="tooltip" data-placement="top" title="My CV"><a class="field-link" href="#cv"><i class="icon-graduation-cap"></i></a></div>
+                            <div class="menu-field col-md-6 col-6" data-toggle="tooltip" data-placement="top" title="My CV"><a class="field-link" href="pages/Gabriela_Wieliczko_CV.pdf" target="_blank"><i class="icon-graduation-cap"></i></a></div>
                         </div>
                         <div class="row">
                             <div class="menu-field col-md-6 col-6" data-toggle="tooltip" data-placement="bottom" title="Contact me!"><a class="field-link" href="#contact"><i class="icon-mail-alt"></i></a></div>
@@ -64,10 +64,29 @@
                         </div>
                     </div>
                     <div class="page-active side-description col-md-6  col-12">Main site</div>
-                    <div class="page side-description  col-md-6  col-12" id="about-me">About me</div> 
+                    <div class="page side-description  col-md-6  col-12" id="about-me">
+                        <h3>About me</h3>
+                        <p>Hi! My name is Gabriela Wieliczko and I'd like to work as a front-end developer. Currently it's my senior year at the AGH University of Science and Technology in the field of Acoustic Engineering.</p>
+                        <p>My passion is music, I play the guitar and create my own tracks (mainly hip-hop beats). Recently I'm interested in audio programming such as creating VST plugins and effects. </p>
+                    </div> 
                     <div class="page side-description  col-md-6  col-12" id="cv">CV</div> 
-                    <div class="page side-description  col-md-6  col-12" id="contact">Contact</div> 
-                    <div class="page side-description  col-md-6  col-12" id="my-projects">My projects</div> 
+                    <div class="page side-description  col-md-6  col-12" id="contact">
+                        <h3>Contact</h3> </br>
+                    
+                        <p>e-mail: <a href="mailto:gawieliczko@gmail.com">gawieliczko@gmail.com</a></p>
+                        <p>phone: +48 691170702</p>
+                    </div> 
+                    <div class="page side-description  col-md-6  col-12" id="my-projects">
+                        <h3>My projects</h3>
+                        <div>
+                            <button type="button" class="btn btn-outline-dark" id="fm-synth-button">FM Synthesizer</button>
+                            <button type="button" class="btn btn-outline-dark" id="snake-button">Snake Game</button>
+                            <button type="button" class="btn btn-outline-dark" id="harmonizer-button">Harmonizer</button>
+                            <button type="button" class="btn btn-outline-dark" id="waveshape-button">Waveshape Synthesizer</button>
+                            <button type="button" class="btn btn-outline-dark" id="speech-button">Speech recognition</button>
+                        </div>
+                        
+                    </div> 
                     
                 </div>
     
@@ -75,13 +94,101 @@
 
             <a href="#"><div class="go-up-button">⇧</div></a>
 
+            <div class="project-popup" id="fm-synth">
+                <div class="project-header">
+                    <div>FM Synthesizer</div>
+                </div>
+                <div class="project-description">
+                    <div class="languages">
+                        <button type="button" class="btn btn-outline-dark">C++</button>
+                        <button type="button" class="btn btn-outline-dark">JUCE</button>
+                    </div>
+                    <div class="description-text">
+                        FM (Frequency Modulation) synthesizer VST plugin made for studies. Enables sound shaping with 
+                    two modulators (1-sine, 2-saw). Both modluation index and frequency of modulator wave can be set. Effect: from laser tag sound to huge bells, depends on what is needed.
+                    </div>
+                    <img src="graphics/fm_synth.jpg" width="598px" height="298px"/>
+                    
+                </div>
+            </div>
+            
+            <div class="project-popup" id="snake">
+                <div class="project-header">
+                    <div>Snake Game</div>
+                </div>
+                <div class="project-description">
+                    <div class="languages">
+                        <button type="button" class="btn btn-outline-dark">JavaScript</button>
+                        <button type="button" class="btn btn-outline-dark">HTML</button>
+                        <button type="button" class="btn btn-outline-dark">CSS</button>
+                    </div>
+                    <div class="description-text">
+                        Simple Snake game made using JavaScript (jQuery), HTML and CSS. Object programming involved.
+                    </div>
+                    
+                    <img src="graphics/snake.JPG"/>
+                </div>
+            </div>
+
+            <div class="project-popup" id="harmonizer">
+                <div class="project-header">
+                    <div>Harmonizer VST</div>
+                </div>
+                <div class="project-description">
+                    <div class="languages">
+                        <button type="button" class="btn btn-outline-dark">C++</button>
+                        <button type="button" class="btn btn-outline-dark">JUCE</button>
+                    </div>
+                    <div class="description-text">
+                        VST plugin, which adds chosen chord (7 available) to prime played on MIDI keyboard. In addition after pressing adjacent black key changes chord to dominant 7th. Also, after pressing adjacent white key, the chord changes it's mode to opposite (for example if mode is major it results in minor).
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-popup" id="waveshape">
+                <div class="project-header">
+                    <div>Waveshape Synthesizer</div>
+                </div>
+                <div class="project-description">
+                    <div class="languages">
+                        <button type="button" class="btn btn-outline-dark">Python</button>
+                    </div>
+                    <div class="description-text">
+                        Standalone application made for studies. It allows to draw on canvas shape of wave's one period, which then is assigned to one of 5 available synth voices. Each voice can be adjusted by setting pitch, pan, frequency of LFO and volume.
+                    </div>
+                    <img src="graphics/waveshape.JPG" />
+                </div>
+            </div>
+
+            <div class="project-popup" id="speech">
+                <div class="project-header">
+                    <div>Speech Recognition</div>
+                </div>
+                <div class="project-description">
+                    <div class="languages">
+                        <button type="button" class="btn btn-outline-dark">Python</button>
+                    </div>
+
+                    <div class="description-text">
+                        Speech recognition algorithm, each part (e.g. MFCC algorithm, preemphasis) made from scratch without using already existing libraries. It recognizes numbers from zero to nine.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="popup-background"></div>
+            
+
         </div>
         
         
         
         <canvas class="background"></canvas>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>

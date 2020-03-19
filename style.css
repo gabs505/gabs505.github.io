@@ -21,7 +21,7 @@ body
 #navbar
 {
     width:100%;
-    height:6vh;
+    height:37px;
     background-color: #363636;
     color:#ffffff;
     z-index:200;
@@ -59,7 +59,7 @@ ul>li
     background-color: #363636;
     font-size:15px;
     padding:5px 6px;
-    border-bottom:0.5px dashed #c4c4c4;;
+    /* border-bottom:0.5px dashed #c4c4c4;; */
 }
 
 ul>li:last-child
@@ -147,18 +147,12 @@ img{
 
 
 
-
-
 .menu-field
 {
     font-size: 20px;
     background-color:#f3f2f0;
     border:0.5px solid #dad9d8;
-    text-align: center;
-    
-    
-    
-    
+    text-align: center;   
     
 }
 
@@ -167,6 +161,107 @@ img{
     background-color:#e2e1e0;
 }
 
+#contact p
+{
+    text-align:left;
+    font-size: medium;
+    margin-left: 5vw;
+}
+
+#contact p a:hover
+{
+    color:rgb(189, 187, 185);
+}
+
+#about-me p
+{
+    text-align:justify;
+    font-size: medium;
+    margin-left: 5vw;
+    margin-top:20px;
+}
+
+
+#my-projects div
+{
+    text-align:left;
+    margin-left: 5vw;
+}
+
+#my-projects div button
+{
+    margin-top:10px;
+}
+
+.project-popup
+{
+    display:none;
+    position:fixed;
+    left:50%;
+    top:50%;
+    z-index:1000;
+    transform:translate(-50%,-50%);
+    width:700px;
+    border-radius: 10px;
+    border:1px solid black;
+    padding:10px 5px;
+    background-color:#ffffff;
+    padding-left:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    
+}
+.project-header
+{
+    border-bottom: 1px solid black;
+    padding-bottom:10px;
+}
+
+.project-description
+{
+    padding-top:10px;
+    font-size:medium;
+    text-align: justify;
+}
+.project-description .languages
+{
+    
+    font-size:smaller;
+    text-align:right;
+    margin-bottom:5px;
+    
+}
+.languages .btn
+{
+    cursor: default;
+}
+
+.project-description img
+{
+    max-width:80%;
+}
+
+.description-text
+{
+    margin: 10px 0;
+}
+#popup-background
+{
+    display:none;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:900;
+    background-color:rgba(0,0,0,0.5);
+    opacity:45%;
+}
+
+.hidden
+{
+    display:none;
+}
 .side-description
 {
 
@@ -278,10 +373,7 @@ a:hover
 
 @media only screen and (min-width: 992px)
 {
-    body
-    {
-        /* overflow: hidden !important; */
-    }
+    
     #main
     {
         height:90vh;

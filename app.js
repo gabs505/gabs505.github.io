@@ -5,19 +5,7 @@
 //   smoothScroll();
 // })
 
-//smooth scrolling with jQuery
-$('#info-button a').on('click', function (e) {
-  if (this.hash !== '') {
-    e.preventDefault();
 
-    const hash = this.hash;
-
-    $('html, body')
-      .animate({
-        scrollTop: $(hash).offset().top
-      },800);
-  }
-});
 
 window.onload= function() {
   Particles.init({
@@ -90,4 +78,46 @@ $(document).ready(function() {
     $(window).scroll(function() {
         stickyNav();
     });
+
+    //popup window handling
+    
+    $('#popup-background').on('click', function(e){
+      $('.project-popup').hide();
+      $('#popup-background').hide();
+    });
+
+  //smooth scrolling with jQuery
+
+$('.scroll-link').on('click', function (e) {
+  if (this.hash === '#menu') {
+    
+    e.preventDefault();
+  }
+    console.log(e)
+    const hash = '#menu';
+    console.log(hash)
+
+    $('html, body')
+      .animate({
+        scrollTop: $(hash).offset().top
+      },800);
+  
 });
+});
+
+
+
+  $('.btn').on('click', function (e) {
+    let identifier='#'+e.target.id.replace('-button','')
+    $(identifier).show();
+    if(e.target.id!='info-button'){
+      $('#popup-background').show();
+    }
+    
+  })
+
+  
+  
+
+
+
