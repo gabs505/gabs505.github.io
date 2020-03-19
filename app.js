@@ -1,12 +1,6 @@
 // //zrobić przełączenie na dark theme po kliknięciu w ikonkę
 
 
-// $('#info-button').on('click',function(){
-//   smoothScroll();
-// })
-
-
-
 window.onload= function() {
   Particles.init({
     selector:'.background',
@@ -93,9 +87,7 @@ $('.scroll-link').on('click', function (e) {
     
     e.preventDefault();
   }
-    console.log(e)
     const hash = '#menu';
-    console.log(hash)
 
     $('html, body')
       .animate({
