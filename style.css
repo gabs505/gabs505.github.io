@@ -46,7 +46,7 @@ ul
     display:none;
     position:fixed;
     width:100px;
-    top:5vh;
+    top:37px;
 }
 
 #upper-menu:hover+ul, ul:hover
