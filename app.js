@@ -83,16 +83,32 @@ $(document).ready(function() {
   //smooth scrolling with jQuery
 
 $('.scroll-link').on('click', function (e) {
-  if (this.hash === '#menu') {
+  console.log(this.hash);
+  if (this.hash === '#menu'||this.hash === '') {
     
     e.preventDefault();
+    
   }
-    const hash = '#menu';
-
+  let hash;
+  if(this.hash === ''){
+    hash = '#';
+    $('html, body')
+    .animate({
+      scrollTop:0
+    },800);
+      
+  }
+  else{
+    hash = '#menu';
     $('html, body')
       .animate({
         scrollTop: $(hash).offset().top
       },800);
+  }
+    
+
+
+    
   
 });
 });
@@ -108,6 +124,8 @@ $('.scroll-link').on('click', function (e) {
     
   })
 
+
+  
   
   
 
