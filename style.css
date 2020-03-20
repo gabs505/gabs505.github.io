@@ -201,7 +201,7 @@ img{
     top:50%;
     z-index:1000;
     transform:translate(-50%,-50%);
-    width:700px;
+    /* width:700px; */
     border-radius: 10px;
     border:1px solid black;
     padding:10px 5px;
@@ -380,6 +380,15 @@ a:hover
     font-size:20px;
     }
 
+    .project-popup
+    {
+        width:60vw;
+    }
+    .project-popup img
+    {
+        display:none;
+    }
+
     
 }
 
@@ -408,4 +417,8 @@ a:hover
 {
     background-color:#e2e1e0;
 }
+    .project-popup
+    {
+        width:700px;
+    }
 }
