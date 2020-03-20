@@ -192,6 +192,17 @@ img{
 {
     margin-top:10px;
 }
+.project-buttons
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+.project-buttons button
+{
+    flex:100px;
+    margin:0 5px;
+}
 
 .project-popup
 {
@@ -388,7 +399,11 @@ a:hover
     {
         display:none;
     }
-
+    .project-description
+    {
+        text-align:left;
+    }
+ 
     
 }
 
