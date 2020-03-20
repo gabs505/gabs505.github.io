@@ -124,14 +124,9 @@ $('.scroll-link').on('click', function (e) {
     
   })
 
-  //optional, need to be tested on mobile
-  $('.btn').on('taphold', function (e) {
-    let identifier='#'+e.target.id.replace('-button','')
-    $(identifier).show();
-    if(e.target.id!='info-button'){
-      $('#popup-background').show();
-    }
-    
+  
+  $('ul>li>a').on('click',function(){
+    $('#navbar ul').hide();
   })
 
   
