@@ -101,8 +101,6 @@ ul>li>a, ul>li>a:hover
     
     margin-left:auto;
     margin-right:auto;
-    /* padding-top:10vh;*/
-    /* height:90vh; */
     z-index:100;
 
 }
@@ -141,8 +139,9 @@ img{
 
 #menu
 {
-    margin-top:2vh;
+    
     /* height:80vh; */
+    z-index:100;
 }
 
 
@@ -152,14 +151,15 @@ img{
     font-size: 20px;
     background-color:#f3f2f0;
     border:0.5px solid #dad9d8;
-    text-align: center;   
+    text-align: center;  
+    z-index:100; 
     
 }
 
-.menu-field:hover
+/* .menu-field:hover
 {
     background-color:#e2e1e0;
-}
+} */
 
 #contact p
 {
@@ -353,13 +353,13 @@ a:hover
     
 }
 
-@media only screen and (max-width: 991px)
+@media only screen and (max-width: 991px),screen and (max-height:430px),screen and (orientation:portrait)
 {
     body
     {
         overflow:scroll;
     }
-    button
+    #info-button,.go-up-button
     {
         display:none;
         visibility: hidden;
@@ -369,9 +369,21 @@ a:hover
     {
         padding-top:15px;
     }
+
+    #menu
+    {
+        margin-top:40px;
+    }
+
+    .description
+    {
+    font-size:20px;
+    }
+
+    
 }
 
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 992px) and (min-height:400px) and (orientation:landscape)
 {
     
     #main
@@ -388,4 +400,12 @@ a:hover
 
     
     
+}
+
+@media only screen and (orientation:landscape)
+{
+    .menu-field:hover
+{
+    background-color:#e2e1e0;
+}
 }
