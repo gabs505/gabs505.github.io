@@ -125,9 +125,7 @@ $('.scroll-link').on('click', function (e) {
   })
 
   
-  $('ul>li>a').on('click',function(){
-    $('#navbar ul').hide();
-  })
+  
 
   
   

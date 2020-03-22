@@ -78,7 +78,12 @@ ul>li>a, ul>li>a:hover
     color:#f3efef;
 }
     
-
+#navbar>ul>li>a
+{
+    display:block;
+    width:100px;
+    height:25px;
+}
 
 #wrapper
 {   
